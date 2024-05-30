@@ -17,7 +17,7 @@ func FahrenheitToCelsius(f float64) float64 {
 func CelsiusToFahrenheit(c float64) float64 {
 	return c*9/5 + 32
 }
-
+//Function main
 func main() {
 	reader := bufio.NewReader(os.Stdin)
 
