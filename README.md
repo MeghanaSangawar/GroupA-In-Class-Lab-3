@@ -7,10 +7,18 @@
 ## 5. Sushma Kambam - 500233832
 ## 6. Pranay Sai Chava - 500236056
 ---------------------------------------------
-### Steps:
+### Code Steps:
+- Used for loop for the continous execution of the user input until the user
+wants to exit.
+- Used if conditions to check weather input is in range
+- A switch statement is used for different units ("F" for Fahrenheit and "C" for Celsius):
+    - If the unit is "F", the program converts Fahrenheit to Celsius and prints the result.
+    - If the unit is "C", the program converts Celsius to Fahrenheit and prints the result.
+    - If the unit is invalid, the program displays an error message.
+### Exexution:
 - Init a Go module
 - Run the "main.go" Program using the command "go run main.go"
-- Now cloned this repository using -git pull
+- Now clone this repository using -git pull
 - updated the code and push the code using Git commands
     -git add . && git commit -m "committed changes" && git push
 
