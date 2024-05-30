@@ -15,7 +15,7 @@ wants to exit.
     - If the unit is "F", the program converts Fahrenheit to Celsius and prints the result.
     - If the unit is "C", the program converts Celsius to Fahrenheit and prints the result.
     - If the unit is invalid, the program displays an error message.
-### Exexution:
+### Execution:
 - Init a Go module
 - Run the "main.go" Program using the command "go run main.go"
 - Now clone this repository using -git pull
