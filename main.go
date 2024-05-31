@@ -22,6 +22,8 @@ func main() {
 	reader := bufio.NewReader(os.Stdin)
 
 	for {
+		// Prompt the user to enter a temperature or type 'exit' to quit
+
 		fmt.Print("Enter temperature (e.g., 32 F or 100 C) or type 'exit' to quit: ")
 		input, _ := reader.ReadString('\n')
 		input = strings.TrimSpace(input)
@@ -31,17 +33,25 @@ func main() {
 		}
 
 		parts := strings.Fields(input)
+		// If the input does not consist of two parts (temperature and unit), prompt the user for valid input and continue to the next iteration
+
 		if len(parts) != 2 {
 			fmt.Println("Invalid input. Please enter a temperature followed by a unit (e.g., 32 F or 100 C).")
 			continue
 		}
 
 		tempStr, unit := parts[0], strings.ToUpper(parts[1])
+		// Parse temperature string into a float64 value
+
 		temp, err := strconv.ParseFloat(tempStr, 64)
+
+		// If parsing fails (non-numeric input), prompt the user for valid input and continue to the next iteration
+
 		if err != nil {
 			fmt.Println("Invalid temperature. Please enter a numeric value.")
 			continue
 		}
+		// Perform temperature conversion based on the unit provided by the user
 
 		switch unit {
 		case "F":
