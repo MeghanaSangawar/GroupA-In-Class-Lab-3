@@ -20,6 +20,6 @@ wants to exit.
 - Run the "main.go" Program using the command "go run main.go"
 - Now clone this repository using -git pull
 - updated the code and push the code using Git commands
-    -git add . && git commit -m "committed changes" && git push
+    - -git add . && git commit -m "committed changes" && git push
 
   
